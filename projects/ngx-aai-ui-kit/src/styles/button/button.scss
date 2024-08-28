@@ -1,0 +1,28 @@
+@import "../colors.scss";
+
+button {
+  border-radius: 16px;
+  padding: 12px 24px;
+  border: 0;
+
+  font-size: 24px;
+  line-height: 130%;
+  font-weight: 600;
+
+  &.btn-primary {
+    background-color: $blue;
+    color: $white;
+
+    &:hover {
+      background-color: $light-blue-10;
+    }
+
+    &:active {
+      background-color: $blue-10;
+    }
+
+    &:disabled {
+      background-color: $light-blue-10;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 1rem;
+
+  & > * {
+    position: relative;
+    padding: 1rem;
+    border: 4px dashed gray;
+    border-radius: 10px;
+
+    & > *:not(h2) {
+      margin: 0.25rem;
+    }
+
+    h2 {
+      position: absolute;
+      top: -16px;
+      left: 20px;
+      margin: 0;
+      background-color: white;
+      width: fit-content;
+      padding-inline: 2px;
+    }
+  }
+}

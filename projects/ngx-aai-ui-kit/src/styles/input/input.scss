@@ -1,0 +1,20 @@
+@import "../colors.scss";
+
+input {
+  padding: 24px;
+
+  border: 2px solid $gray-20;
+  border-radius: 16px;
+  outline: none;
+
+  font-size: 20px;
+  line-height: 140%;
+
+  &::placeholder {
+    color: $gray-30;
+  }
+
+  &:focus {
+    border: 2px solid $light-blue-10;
+  }
+}
